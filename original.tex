@@ -2,6 +2,7 @@
 \usetheme{Madrid}
  
 \usepackage{xltxtra}
+\usepackage[]{media9}
 \XeTeXlinebreaklocale "th"
 \defaultfontfeatures{Scale=1.4}
 \setmainfont[Script=Thai]{THSarabunNew.ttf}
@@ -20,6 +21,27 @@
 
 \begin{frame}{สาเหตุของโรคอัลไซเมอร์}
 
+\begin{center}
+\includemedia[
+  label=some_dice,
+  width=1.0\linewidth,height=0.675\linewidth, % 16:9
+  addresource=video.mp4, 
+  transparent,
+  activate=pageopen,
+  passcontext,
+  flashvars={
+    source=video.mp4
+   &autoPlay=true % start playing on activation
+   &loop=true
+  }
+]{}{VPlayer.swf}
+% loop video
+\end{center}
+
+\end{frame}
+
+\begin{frame}{สาเหตุของโรคอัลไซเมอร์}
+
   {\large Acetylcholine}
 
   \begin{itemize}
@@ -35,7 +57,9 @@
 
   \begin{itemize}
     \item เกิดจากการย่อยสลายของโปรตีนขนาดใหญ่ที่เรียกว่า อะไมลอยด์พรีเคอเซอร์โปรตีน
-    \item ถูกย่อยโดยเอนไซม์ที่ชื่อ เบต้าซีครีเทส (β secretase) และแกมม่าซีครีเทส (γ secretase)
+    \item ถูกย่อยโดยเอนไซม์ที่ชื่อ เบต้าซีครีเทส ($\beta$ secretase) และแกมม่าซีครีเทส
+    
+    ($\gamma$ secretase)
     \item ทำให้การทำงานของสารสื่อประสาทผิดปกติไป โดยเฉพาะอย่างยิ่งทำให้สารอะเซติลโคลีนลดลง  
   \end{itemize}
 \end{frame}
